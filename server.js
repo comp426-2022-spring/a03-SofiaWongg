@@ -101,9 +101,6 @@ app.use(function(req, res) {
   res.type("text/plain")
 })
 
-app.use(function(req, res){
-  res.status(404).send('404 NOT FOUND')
-});
 
 
 
