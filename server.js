@@ -28,13 +28,13 @@ const server = app.listen(port, () => {
 //import { isNumberObject } from 'util/types'
 // const require = createRequire(import.meta.url);
 
-export function coinFlip() {
+function coinFlip() {
   var x = Math.round(Math.random());
   if (x < 1) {return "heads";} else {return "tails";}
 }
 
 
-export function coinFlips(flips) {
+function coinFlips(flips) {
   const flipArray = []
   for(let i = 0; i<flips; i++){
     flipArray[i] = coinFlip()
@@ -43,7 +43,7 @@ export function coinFlips(flips) {
 }
 
 
-export function countFlips(array) {
+function countFlips(array) {
   var h = 0;
   var t = 0;
   for(let i = 0; i<array.length; i++){
@@ -58,7 +58,7 @@ export function countFlips(array) {
 }
 
 
-export function flipACoin(call) {
+function flipACoin(call) {
   let flipCall = {call: call, flip: coinFlip(), result: ''};
   if(flipCall.call === flipCall.flip){
     flipCall.result = 'win';
