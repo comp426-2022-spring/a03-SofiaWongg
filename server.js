@@ -1,8 +1,10 @@
+import minimist from 'minimist'
+import express from 'express'
+
 const express = require('express')
 const app = express()
 
-//import minimist from 'minimist'
-//import express from 'express'
+
 
 var port = args.port || process.env.PORT || 5000;
 
