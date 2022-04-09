@@ -82,6 +82,10 @@ app.get('/app', (req, res)=>{
   res.type('text/plain')
 })
 
+app.get('/app/flip', (req, res) => {
+  res.status(200).json({ 'flip': coinFlip() })
+})
+
 app.get('/app/flips/:number([0-9]{1,3})', (req, res) => {
   const flips = coinFlips(req.params.number);
 	const numFlips = countFlips(flips);
