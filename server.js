@@ -1,14 +1,14 @@
 const express = require('express')
 const app = express()
 
-import minimist from 'minimist'
-import express from 'express'
+//import minimist from 'minimist'
+//import express from 'express'
 
 var port = args.port || process.env.PORT || 5000;
 
 
 
-const args = minimist(process.argv.slice(2));
+const args = require('minimist')(process.argv.slice(2));
 
 args['port']
 
@@ -16,15 +16,8 @@ const server = app.listen(port, () => {
   console.log('App is running on port %PORT%'.replace('%PORT%', port))
 });
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true}))
-
-const logging = (req,res, next) => {
-    console.log(req.body.number)
-    next()
-}
-
-
+//app.use(express.json())
+//app.use(express.urlencoded({ extended: true}))
 
 
 //coin flip stuff from 02
