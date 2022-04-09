@@ -24,9 +24,9 @@ const server = app.listen(port, () => {
 
 //coin flip stuff from 02
 
- import { createRequire } from 'module';
-import { isNumberObject } from 'util/types'
- const require = createRequire(import.meta.url);
+// import { createRequire } from 'module';
+//import { isNumberObject } from 'util/types'
+// const require = createRequire(import.meta.url);
 
 export function coinFlip() {
   var x = Math.round(Math.random());
