@@ -3,7 +3,7 @@ const app = express()
 
 var port = args.port || 5000 
 
-import minimist from 'minimist'
+//import minimist from 'minimist'
 import express from 'express'
 
 const args = minimist(process.argv.slice(2));
